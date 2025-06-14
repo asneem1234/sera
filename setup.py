@@ -1,0 +1,36 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="ai-study-buddy",
+    version="0.1.0",
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        "streamlit>=1.24.0",
+        "python-dotenv>=1.0.0",
+        "langchain>=0.0.267",
+        "langchain-community>=0.0.13",
+        "langchain-google-genai>=0.0.5",
+        "google-generativeai>=0.3.1",
+        "faiss-cpu>=1.7.4",
+        "PyPDF2>=3.0.0",
+        "SpeechRecognition>=3.10.0",
+        "elevenlabs>=0.2.24",
+        "gTTS>=2.3.2",
+        "pyaudio>=0.2.13",
+        "requests>=2.31.0",
+    ],
+    python_requires=">=3.8",
+    description="An interactive AI-powered voice assistant for studying from PDF materials",
+    author="AI Study Buddy Team",
+    author_email="example@example.com",
+    url="https://github.com/yourusername/ai-study-buddy",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Education",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+    ],
+)
